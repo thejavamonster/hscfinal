@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anaximander</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+      display: flex;
+      height: 100vh;
+    }
+
+    /* Sidebar styles */
+    #sidebar {
+      width: 25%; /* Sidebar takes 25% of the page */
+      background-color: #333; /* Dark background */
+      color: #fff; /* White text */
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      box-sizing: border-box;
+      overflow-y: auto;
+    }
+
+    #sidebar h1 {
+      font-size: 1.5em;
+      margin-bottom: 20px;
+    }
+
+    #sidebar p {
+      font-size: 1em;
+      margin-bottom: 10px;
+      line-height: 1.5;
+    }
+
+    #sidebar button {
+      padding: 10px;
+      margin: 10px 0;
+      font-size: 1em;
+      background-color: #555;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    #sidebar button:hover {
+      background-color: #777;
+    }
+
+    /* Canvas container for Babylon.js or P3D model */
+    #mainCanvasContainer {
+      flex: 1; /* Canvas container takes remaining space (75%) */
+      position: relative;
+    }
+
+    canvas {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    a {
+      color: yellow;
+    }
+  </style>
+</head>
+<body>
+  <!-- Sidebar -->
+  <div id="sidebar">
+    <h1>Tolkien First Age</h1>
+	<p>In (most of) the First Age of Arda, the world was a flat disk and the Two Trees provided light to Valinor. 
+	Arda was surrounded by a spinning sphere of stars, which were created by Varda in the Years of the Lamps. 
+	The world was surrounded by Ekkaia, the Encircling Seas, outside of which was the Void.
+	The Two Trees, Telperion and Laurelin, were located in Valmar in Valinor, which at that point in time was still a physical place on the earth. 
+	They provided light to Valinor but not Middle-earth, as the Pelori Mountains running up and down the east side of Valinor blocked their light from traveling across the Great Sea.
+	Valinor and Middle-earth were joined at the north edge of the world by the Helcaraxe, or the Grinding Ice.
+	Beleriand, the area of Middle-earth west of the Blue Mountains, still existed for most of the First Age, although it sunk in the War of Wrath.	<p>
+	<p></p>
+    <p>Other models</p>
+    <a href="anaximander.html">Anaximander</a>
+    <a href="3dthing.html">Ptolemy</a>
+    <a href="thales.html">Thales</a>
+    <a href="philolaus.html">Philolaus</a>
+    <a href="tolkienfa.html">Tolkien (First Age)</a>
+    <a href="tolkiensa.html">Tolkien (Second Age)</a>
+    <a href="tolkienta.html">Tolkien (Third Age)</a>
+  </div>
+
+  <!-- Canvas container -->
+  <div id="mainCanvasContainer">
+    <iframe allowfullscreen width="640" height="480" loading="lazy" frameborder="0" src="https://p3d.in/e/NXYmo"></iframe>
+  </div>
+
+  <script src="https://cdn.babylonjs.com/babylon.js"></script>
+  <script src="https://cdn.babylonjs.com/loaders/babylonjs.loaders.min.js"></script>
+
+</body>
+</html>

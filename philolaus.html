@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anaximander</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+      display: flex;
+      height: 100vh;
+    }
+
+    /* Sidebar styles */
+    #sidebar {
+      width: 25%; /* Sidebar takes 25% of the page */
+      background-color: #333; /* Dark background */
+      color: #fff; /* White text */
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      box-sizing: border-box;
+      overflow-y: auto;
+    }
+
+    #sidebar h1 {
+      font-size: 1.5em;
+      margin-bottom: 20px;
+    }
+
+    #sidebar p {
+      font-size: 1em;
+      margin-bottom: 10px;
+      line-height: 1.5;
+    }
+
+    #sidebar button {
+      padding: 10px;
+      margin: 10px 0;
+      font-size: 1em;
+      background-color: #555;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    #sidebar button:hover {
+      background-color: #777;
+    }
+
+    /* Canvas container for Babylon.js or P3D model */
+    #mainCanvasContainer {
+      flex: 1; /* Canvas container takes remaining space (75%) */
+      position: relative;
+    }
+
+    canvas {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    a {
+      color: yellow;
+    }
+  </style>
+</head>
+<body>
+  <!-- Sidebar -->
+  <div id="sidebar">
+    <h1>Philolaus</h1>
+    <p>Press <b>space</b> to pause. Zoom in and out with scroll wheel, left hold to rotate, right hold to pan.</p>
+    <button id="pauseButton">Pause/Resume Animation</button>
+    <button id="resetCameraButton">Reset Camera</button>
+	<p>Philolaus was an Ancient Greek Pythagorean. He developed the first non-geocentric model of the universe. His model featured not the Sun, but a "Central Fire" at the center of the universe, with
+	the Sun and the planets (including Earth) orbiting it and a unmoving sphere of stars surrounding it. Alongside the usual planets that the Ancient Greeks recognized, Philolaus also theorized that there
+	was an "Anti-Earth" orbiting opposite the regular Earth. He added this so that there would be 10 heavenly bodies, as his number theory required.</p>
+	<p>Although Philolaus's model can't really be called heliocentric, he was the first to move away from the traditional geocentric idea. He's recognized as one of the most important figures in the Pythagorean school.</p>
+	<p></p>
+    <p>Other models</p>
+    <a href="anaximander.html">Anaximander</a>
+    <a href="3dthing.html">Ptolemy</a>
+    <a href="thales.html">Thales</a>
+    <a href="philolaus.html">Philolaus</a>
+    <a href="tolkienfa.html">Tolkien (First Age)</a>
+    <a href="tolkiensa.html">Tolkien (Second Age)</a>
+    <a href="tolkienta.html">Tolkien (Third Age)</a>
+  </div>
+
+  <!-- Canvas container -->
+  <div id="mainCanvasContainer">
+    <iframe allowfullscreen width="640" height="480" loading="lazy" frameborder="0" src="https://p3d.in/e/U0tTU"></iframe>
+  </div>
+
+  <script src="https://cdn.babylonjs.com/babylon.js"></script>
+  <script src="https://cdn.babylonjs.com/loaders/babylonjs.loaders.min.js"></script>
+
+</body>
+</html>
